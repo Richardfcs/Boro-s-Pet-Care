@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container-fluid">
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="titulo navbar-brand titulo" href="home.html">Boro's Pet Care</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body opacity-75">
+                        <strong>
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item d-flex justify-content-between align-items-center">
+                                    <div class=" d-flex justify-content-center align-items-center">
+                                        <a class="nav-link active pe-2" aria-current="page"
+                                            href="componente/perfil.html" target="iFrame">Perfil</a>
+                                        <a aria-current="page" href="componente/perfil.html" target="iFrame"><img
+                                                src="img/man.jpg" class="img-fluid rounded-circle" alt="..."
+                                                style="width: 50px; height: 50px;"></a>
+                                    </div>
+                                    <div data-bs-dismiss="offcanvas">
+                                        <a href="cadastarpet.html" aria-current="page" target="iFrame" class="">Pets</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="componente/primeirosp.html"
+                                        target="iFrame">Início</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="componente/vacinas.html"
+                                        target="iFrame">Vacinas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="componente/atendimentos.html"
+                                        target="iFrame">Atendimentos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="componente/funeraria.html"
+                                        target="iFrame">Funerária</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="componente/petshop.html"
+                                        target="iFrame">Área Pets</a>
+                                </li>
+                            </ul>
+                        </strong>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Produtos" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid mt-5 ratio ratio-1x1" style="--bs-aspect-ratio: 1000%;">
+            <iframe src="componente/primeirosp.html" frameborder="0" class="mt-5 container-fluid" name="iFrame"
+                scrolling="no"></iframe>
+        </div>
+    </section>
+</body>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>
